@@ -1,4 +1,6 @@
 # DataStructure and Algorithm
 ---
-## DataStructure
-## Algorithm
+## DataStructure   
+- DataStructure branch
+1. Linked List
+## Algorithm   
