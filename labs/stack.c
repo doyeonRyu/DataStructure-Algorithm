@@ -41,16 +41,19 @@ int main()
     return 0;
 }
 
+// when this function is called, top is added one and value is added in stack.
 void push(int val)
 {
     stack[++top] = val;
 }
 
+// This function returns stack and top is subtracted one.
 int pop()
 {
     return stack[top--];
 }
 
+// If stack is full which means number of (top+1) is MAX_STACK_SIZE, return 1. If stack is not full, return 0.
 int stack_full()
 {
     if ((top + 1) == MAX_STACK_SIZE)
@@ -59,6 +62,7 @@ int stack_full()
         return 0;
 }
 
+// If stack is empty which means number of top is -1, return 1. If stack is not empty, return 0.
 int stack_empty()
 {
     if (top == -1) 

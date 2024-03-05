@@ -42,16 +42,19 @@ printf("\nNow the queue is empty.\n");
     return 0;
 }
 
+// when this function is called, rear is added one and value is added in queue.
 void enqueue(int val)
 {
     queue[++rear] = val;
 }
 
+// This function returns queue and front is added one.
 int dequeue()
 {
     return queue[++front];
 }
 
+// If queue is full which means number of (rear-front) is MAX_QUEUE_SIZE, return 1. If queue is not full, return 0.
 int queue_full()
 {
     if ((rear - front) == MAX_QUEUE_SIZE) 
@@ -60,6 +63,7 @@ int queue_full()
         return 0;
 }
 
+// If queue is empty which means front and rear is the same, return 1, else return 0
 int queue_empty()
 {
     if (front == rear)
